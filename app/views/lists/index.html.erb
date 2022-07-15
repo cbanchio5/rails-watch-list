@@ -1,0 +1,31 @@
+<nav class="navbar" style="background-color: #F#e3f2fd;">
+  <div class="container-fluid">
+  <%= image_tag "popcorn.png", width: 30, height: 30, class: 'd-inline-block align-text-top' %>
+<div class="justity-content-end m-1">
+ <%= link_to "New List", new_list_path %>
+    <%= link_to "My Lists", lists_path %>
+</div>
+
+  </div>
+</nav>
+
+<div class="brand">
+
+<h3>Your favorite movies in one place</h3>
+
+</div>
+<div class="container">
+
+<div class="movie-container mt-3">
+  <div class="row align-items-start">
+    <% @lists.each do |list| %>
+        <div class="card col m-3" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title"> <%= link_to list.name, list_path(list) %></h5>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+</div>

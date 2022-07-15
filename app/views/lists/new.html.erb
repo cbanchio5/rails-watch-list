@@ -1,0 +1,15 @@
+<nav class="navbar" style="background-color: ##e3f2fd;">
+  <div class="container-fluid">
+    <%= image_tag "popcorn.png", width: 30, height: 30, class: 'd-inline-block align-text-top' %>
+    <%= link_to "My Lists", lists_path %>
+  </div>
+</nav>
+
+<div class="container">
+
+<%= simple_form_for  @list do |f| %>
+  <%= f.input :name %>
+  <%= f.submit "Create list", class: "btn btn-primary" %>
+<% end %>
+
+</div>

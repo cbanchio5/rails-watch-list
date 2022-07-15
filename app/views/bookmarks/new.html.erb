@@ -1,0 +1,16 @@
+<nav class="navbar" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <%= image_tag "popcorn.png", width: 30, height: 30, class: 'd-inline-block align-text-top' %>
+  </div>
+</nav>
+
+<div class="container">
+<h1>New Bookmark</h1>
+
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment %>
+
+  <%= f.button :submit %>
+<% end %>
+
+</div>

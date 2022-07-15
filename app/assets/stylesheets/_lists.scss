@@ -1,0 +1,15 @@
+// Place all the styles related to the lists controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.brand {
+
+  background-image: asset-url('cinema.jpeg');
+  width:auto;
+  height: 500px;
+  color: rgba(230, 230, 230, 1);
+  background-position: center;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 150px;
+
+}
